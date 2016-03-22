@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Vector2","Representation of a mathematical vector e.g. a position or velocity"]],"trait":[["FloatVector","Special methods for floating point vectors"]]});

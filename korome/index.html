@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `korome` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, korome">
+
+    <title>korome - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'></p><script>window.sidebarCurrent = {name: 'korome', ty: 'mod', relpath: '../'};</script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>korome</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-0' class='srclink' href='../src/korome/lib.rs.html#1-58' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>A small game engine written in Rust.</p>
+</div><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table>
+                    <tr class=' module-item'>
+                        <td><a class='mod' href='glium/index.html'
+                               title='korome::glium'>glium</a></td>
+                        <td class='docblock short'>
+                             <p>Re-export of glium crate</p>
+
+                        </td>
+                    </tr>
+                </table><h2 id='macros' class='section-header'><a href="#macros">Macros</a></h2>
+<table>
+                    <tr class=' module-item'>
+                        <td><a class='macro' href='macro.include_texture!.html'
+                               title='korome::include_texture!'>include_texture!</a></td>
+                        <td class='docblock short'>
+                             <p>Loads a texture, by loading the bytes at compile-time</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='macro' href='macro.is_down!.html'
+                               title='korome::is_down!'>is_down!</a></td>
+                        <td class='docblock short'>
+                             <p>Macro for easily doing things if particular keys are down</p>
+
+<h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
+                        </td>
+                    </tr>
+                </table><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Drawer.html'
+                               title='korome::Drawer'>Drawer</a></td>
+                        <td class='docblock short'>
+                             <p>Provides functionality for drawing.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.FrameInfo.html'
+                               title='korome::FrameInfo'>FrameInfo</a></td>
+                        <td class='docblock short'>
+                             <p>Wraps together useful data about what has happened (e.g. events)</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.GameManager.html'
+                               title='korome::GameManager'>GameManager</a></td>
+                        <td class='docblock short'>
+                             <p>Manages events and frames</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Graphics.html'
+                               title='korome::Graphics'>Graphics</a></td>
+                        <td class='docblock short'>
+                             <p>Contains the display and handles most of the graphics</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Texture.html'
+                               title='korome::Texture'>Texture</a></td>
+                        <td class='docblock short'>
+                             <p>A 2D texture that is ready to be drawn</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Vector2.html'
+                               title='korome::Vector2'>Vector2</a></td>
+                        <td class='docblock short'>
+                             <p>Representation of a mathematical vector e.g. a position or velocity</p>
+
+                        </td>
+                    </tr>
+                </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                    <tr class=' module-item'>
+                        <td><a class='enum' href='enum.MouseButton.html'
+                               title='korome::MouseButton'>MouseButton</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='enum' href='enum.StateAction.html'
+                               title='korome::StateAction'>StateAction</a></td>
+                        <td class='docblock short'>
+                             <p>Describes what to do after a frame update</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='enum' href='enum.TextureError.html'
+                               title='korome::TextureError'>TextureError</a></td>
+                        <td class='docblock short'>
+                             <p>Wraps together all errors that can occur creating <code>Texture</code>s</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='enum' href='enum.VirtualKeyCode.html'
+                               title='korome::VirtualKeyCode'>VirtualKeyCode</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table>
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Draw.html'
+                               title='korome::Draw'>Draw</a></td>
+                        <td class='docblock short'>
+                             <p>Descibes objects that can be drawn to the screen</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.FloatVector.html'
+                               title='korome::FloatVector'>FloatVector</a></td>
+                        <td class='docblock short'>
+                             <p>Special methods for floating point vectors</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.State.html'
+                               title='korome::State'>State</a></td>
+                        <td class='docblock short'>
+                             <p>Describes a way to handle an update</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Update.html'
+                               title='korome::Update'>Update</a></td>
+                        <td class='docblock short'>
+                             <p>Describes objects that can change because of events</p>
+
+                        </td>
+                    </tr>
+                </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.DrawResult.html'
+                               title='korome::DrawResult'>DrawResult</a></td>
+                        <td class='docblock short'>
+                             <p>Result type for <code>glium::DrawError</code></p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.TextureResult.html'
+                               title='korome::TextureResult'>TextureResult</a></td>
+                        <td class='docblock short'>
+                             <p>Result type for <code>korome::TextureError</code></p>
+
+                        </td>
+                    </tr>
+                </table><h2 id='impls' class='section-header'><a href="#impls">Implementations</a></h2>
+<table></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "korome";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

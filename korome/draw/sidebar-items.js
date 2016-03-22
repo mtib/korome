@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Drawer","Provides functionality for drawing."],["Graphics","Contains the display and handles most of the graphics"],["Texture","A 2D texture that is ready to be drawn"]],"trait":[["Draw","Descibes objects that can be drawn to the screen"]]});
